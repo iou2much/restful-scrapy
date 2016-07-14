@@ -1,0 +1,3 @@
+[submodule "scrapy_cluster"]
+	path = scrapy_cluster
+	url = https://github.com/iou2much/scrapy-cluster.git
