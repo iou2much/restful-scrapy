@@ -18,5 +18,6 @@ class JSONResponse(HttpResponse):
 def feed(request):
     if request.method == 'GET':
         res = {'time':time.time()}
-        crawl()
+        json_req='{"url": "http://istresearch.com", "appid":"testapp", "crawlid":"ABC123"}'
+        crawl(json_req)
         return JSONResponse(res)

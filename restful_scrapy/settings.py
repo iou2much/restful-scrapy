@@ -15,6 +15,8 @@ import djcelery
 djcelery.setup_loader()
 BROKER_URL = 'redis://redis-svc:6379/1'
 
+from mongoengine import connect
+connect('crawler', host='mongodb', port=27017)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))

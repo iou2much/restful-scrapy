@@ -1,6 +1,6 @@
 # Here, 'scdev' is the host with Kafka and Redis
 REDIS_HOST = 'redis-svc'
-KAFKA_HOSTS = 'kafka-svc1:9092'
+KAFKA_HOSTS = 'kafka.1.svc:9092'
 #KAFKA_HOSTS = '192.168.16.9:9092'
 #KAFKA_HOSTS = 'localhost:9092'
 

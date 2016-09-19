@@ -4,7 +4,7 @@ import argparse,json
 mod = importlib.import_module("scrapy_cluster.kafka-monitor.kafka_monitor")
 KafkaMonitor=mod.KafkaMonitor
 
-KAFKA_HOSTS = 'kafka-svc1:9092'
+KAFKA_HOSTS = 'kafka.1.svc:9092'
 kafka_monitor = KafkaMonitor('localsettings.py')
 
 kafka_monitor.setup(level='INFO', log_file='INFO',

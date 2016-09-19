@@ -1,5 +1,15 @@
-from __future__ import unicode_literals
+#-*- coding: utf-8 -*-
+#from django.db import models
+from mongoengine import Document, DynamicDocument, EmbeddedDocument, fields
 
-from django.db import models
+class PageDocument(Document):
+    meta = {
+        'collection': 'page',
+#        'db_alias': 'crawler'
 
-# Create your models here.
+    }
+
+    url = fields.StringField()
+    raw_content = fields.StringField()
+    extract_content = fields.StringField()
+    title = fields.StringField()
